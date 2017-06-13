@@ -570,6 +570,14 @@ def pageAlarmOptions() {
         multiple:       true,
         required:       false
     ]
+    
+    def inputSwitchMode = [
+        name:           "switchMode",
+        type:           "enum",
+        metadata:       [values:["None","1","2","3","4","5","6","7","8","9","10"]],
+        title:          "Choose switch mode",
+        defaultValue:   "None"
+    ]
 
     def inputCameras = [
         name:           "cameras",
